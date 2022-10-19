@@ -1,0 +1,33 @@
+{
+  "name": "module-federation-cra",
+  "version": "1.0.0",
+  "description": "Add module federation support to your CRA application without ejecting",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ikawka/module-federation-cra.git"
+  },
+  "keywords": [
+    "module-federation",
+    "craco",
+    "cra5",
+    "cra",
+    "create-react-app"
+  ],
+  "author": "hasanayan",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ikawka/module-federation-cra/issues"
+  },
+  "homepage": "https://github.com/ikawka/module-federation-cra#readme",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "@craco/craco": "^6.4.5",
+    "webpack": "^5.64.4"
+  }
+}
