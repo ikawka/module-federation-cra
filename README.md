@@ -61,19 +61,19 @@ module.exports = {
 
 3. Update the scripts section of your package.json as follows:
 
-```
+```diff
   ...
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "craco:build": "craco build",
-    "craco:start": "craco start",
+-    "start": "react-scripts start",
+-    "build": "react-scripts build",
++    "start": "craco start",
++    "build": "craco build",
     ...
 ```
 
 ## Testing the plugin locally
 
-There are two test apps in this repository inside test folder (app1 and app2). Install their dependencies on them using yarn (`yarn install`) and hit `yarn start` on both of them. When you navigate to app1 it should render the exported button from app2 that says `hello from app2`
+There are two sample apps in this repository inside sample folder (app1 and app2). Install their dependencies on them using yarn (`yarn install`) and hit `yarn start` on both of them. When you navigate to app1 it should render the exported button from app2 that says `hello from app2`
 
 ## License
 

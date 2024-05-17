@@ -9,11 +9,10 @@
   "keywords": [
     "module-federation",
     "craco",
-    "cra5",
     "cra",
     "create-react-app"
   ],
-  "author": "hasanayan",
+  "author": "ikawka",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/ikawka/module-federation-cra/issues"
@@ -21,7 +20,7 @@
   "homepage": "https://github.com/ikawka/module-federation-cra#readme",
   "main": "index.js",
   "directories": {
-    "test": "test"
+    "sample": "sample"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

@@ -1,6 +1,5 @@
-const webpack = require("webpack");
+const ModuleFederationPlugin = require("webpack/lib/container/ModuleFederationPlugin");
 const paths = require("react-scripts/config/paths");
-const { ModuleFederationPlugin } = webpack.container
 
 const getModuleFederationConfigPath = (additionalPaths = []) => {
   const path = require("path");
@@ -23,6 +22,7 @@ module.exports = {
     const moduleFederationConfigPath = getModuleFederationConfigPath();
 
     if (moduleFederationConfigPath) {
+      const moduleFederationConfig = require(moduleFederationConfigPath);
       webpackConfig.output.publicPath = "auto";
 
       if (pluginOptions?.useNamedChunkIds) {
@@ -36,14 +36,12 @@ module.exports = {
       htmlWebpackPlugin.userOptions = {
         ...htmlWebpackPlugin.userOptions,
         publicPath: paths.publicUrlOrPath,
-        excludeChunks: [require(moduleFederationConfigPath).name],
+        excludeChunks: [moduleFederationConfig.name],
       };
 
       webpackConfig.plugins = [
         ...webpackConfig.plugins,
-        new ModuleFederationPlugin(
-          require(moduleFederationConfigPath)
-        ),
+        new ModuleFederationPlugin(moduleFederationConfig),
       ];
 
     }
