@@ -1,12 +1,11 @@
 # module-federation-cra
 
+Add module-federation support for your CRA project without ejecting and losing update support of react-scripts. Requires latest version of CRA with Webpack 5
+
 ## Credits
 
 A clone of [craco-module-federation](https://github.com/hasanayan/craco-module-federation).
 
-## Note
-
-Add module-federation support for your CRA project without ejecting and losing update support of react-scripts. Requires latest version of CRA with Webpack 5
 
 ## Install
 

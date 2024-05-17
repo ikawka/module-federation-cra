@@ -1,6 +1,6 @@
 {
   "name": "module-federation-cra",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "description": "Add module federation support to your CRA application without ejecting",
   "repository": {
     "type": "git",
