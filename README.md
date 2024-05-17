@@ -10,7 +10,7 @@ A clone of [craco-module-federation](https://github.com/hasanayan/craco-module-f
 ## Install
 
 ```
-npm install https://github.com/ikawka/module-federation-cra.git --save-dev
+npm install module-federation-cra --save-dev
 ```
 
 ## Usage
